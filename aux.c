@@ -12,11 +12,6 @@ static int	get_pow(long int n)
 	return (pow);
 }
 
-static void ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
-
 void	ft_putnbr_fd(int nb, int fd)
 {
 	int			sign;
@@ -40,6 +35,10 @@ void	ft_putnbr_fd(int nb, int fd)
 	}
 }
 
+static void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
 
 void	ft_putstr_fd(char *s, int fd)
 {

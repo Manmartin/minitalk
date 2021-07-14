@@ -20,5 +20,8 @@ $(CLIENT): $(COBJ)
 
 clean:
 	rm -f $(SOBJ) $(COBJ)
+fclean: clean
+	rm -f $(SERVER) $(CLIENT)
+re: fclean all
 
-.PHONY: all
+.PHONY: all clean fclean re

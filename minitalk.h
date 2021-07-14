@@ -6,8 +6,6 @@
 # include <limits.h>
 # include <stdlib.h>
 
-# include <stdio.h>
-
 void	ft_putnbr_fd(int nb, int fd);
 void	ft_putstr_fd(char *s, int fd);
 int     ft_atoi(const char *str);
